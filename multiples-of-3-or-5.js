@@ -31,3 +31,16 @@ function solution(number){ // intialize function that will return either 0 or su
   }
   return sumNum;//return sum
 }
+
+//SENSEI's ANSWER:
+
+function solution(number){ //initialize the function that will return either 0 or sum
+  var sum = 0; //initialize return variable (NOTE: this also takes care of the 'return 0' requirement for negative numbers)
+  
+  for(var i = 1;i< number; i++){ //iterate through loop to determine multiples
+    if(i % 3 == 0 || i % 5 == 0){ //if 'i' is a multiple of 3 or 5, add to return variable
+      sum += i
+    }
+  }
+  return sum; //Return variable value
+}
